@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-weight: 550;
+    background-color: #2D2D2D;
+}
+
+/* #navgation */
+
+#navgation nav ul {
+    display: flex;
+    justify-content: center;
+    z-index: 99999;
+}
+
+#navgation nav li {
+    display: flex;
+    padding: 12px 24px;
+}
+
+#navgation nav a {
+    color: #C9C9C9;
+}
+
+#navgation nav a:hover,
+#navgation nav a:focus {
+    color: #ffffff;
+}
+
+/* main-header images */
+
+#header header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 0px;
+    padding-bottom: 0px;
+}
+
+.images {
+    max-width: 100%;
+    position: relative;
+    content: '';
+}
+
+.img-1 img {
+    height: 400px;
+    z-index: 10;
+}
+
+.img-2 img {
+    height: 300px;
+    position: absolute;
+    top: 102px;
+    left: -15px;
+}
+
+.img-3 img {
+    position: absolute;
+    top: -40px;
+    left: 320px;
+}
+
+/* main-header text */
+
+.info-me h2 {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.info-me h1 {
+    color: #FFFFFF;
+    font-size: 2.2rem;
+}
+
+.info-button {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 30px 0px;
+}
+
+.btn-1 { grid-area: 2 / 1 / 4 / 5; }
+.btn-2 { grid-area: 2 / 3 / 4 / 5; }
+.btn-3 { grid-area: 4 / 1 / 6 / 5; margin-bottom: 20px; }
+
+.btn-3 {
+    padding: 2px 0px;
+}
+
+.btn-1 button {
+    background-color: transparent;
+    border: none;
+}
+
+
+.btn-1 a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 550;
+    background-color: #7996FC;
+    padding: 10px 20px;
+    border-radius: 12px 6px 12px 6px;
+}
+
+.btn-1 span {
+    margin-left: 35px;
+}
+
+.btn-2 button {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-2 a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 550;
+    background-color: #414141;
+    padding: 10px 20px;
+    border-radius: 12px 6px 12px 6px;
+}
+
+.btn-2 span {
+    margin-left: 35px;
+}
+
+.btn-3 button {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-3 a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 550;
+    background-color: #414141;
+    padding: 10px 20px;
+    border-radius: 12px 6px 12px 6px;
+}
+
+.btn-3 span {
+    margin-left: 70px;
+}
+
+#typegraph {
+    padding: 80px 20%;
+    padding-bottom: 0px;
+}
+
+#typegraph p {
+    color: #C9C9C9;
+    font-size: 1.5rem;
+}
+
+#typegraph h3 {
+    font-size: 1.7rem;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: 550;
+}
+
+#portfolio {
+    padding: 100px 0px;
+    padding-bottom: 0px;
+}
+
+.title h1 {
+    color: #FFFFFF;
+    padding: 0px 12%;
+}
+
+.portfolio-flex {
+    display: grid;
+    place-content: center;
+    gap: 12px;
+}
+
+.my-skills {
+    display: flex;
+    gap: 100px;
+    padding: 50px 0px;
+}
+
+.my-skills h3 {
+    padding: 12px 0px;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.skill-1 img,
+.skill-2 img,
+.skill-3 img {
+    height: 200px;
+}
+
+.button-account {
+    display: flex;
+    gap: 40px;
+    place-content: center;
+    margin-left: 85px;
+}
+
+.btn-account-1 button {
+    background-color: transparent;
+    border: none;
+    margin-right: 155px;
+}
+
+.btn-account-1 a {
+    color: #C9C9C9;
+    font-size: 1.4rem;
+}
+
+.btn-account-2 button {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-account-2 a {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    background: #414141;
+    padding: 5px 15px;
+    border-radius: 12px 6px 12px 6px;
+}
+
+.btn-account-2 span {
+    margin-left: 30px;
+}
+
+.btn-account-3 button {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-account-3 a {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    background: #7996FC;
+    padding: 5px 15px;
+    border-radius: 12px 6px 12px 6px;
+}
+
+.btn-account-3 span {
+    margin-left: 30px;
+}
+
+.btn-account-4 button {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-account-4 a {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    background: #414141;
+    padding: 5px 15px;
+    border-radius: 12px 6px 12px 6px;
+}
+
+.btn-account-4 span {
+    margin-left: 30px;
+}
+
+#reference {
+    padding: 80px 5%;
+}
+
+.title-ref {
+    color: #FFFFFF;
+    padding: 0px 8%;
+}
+
+.cards-ref {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+}
+
+.ref-card1 {
+    background-color: #414141;
+    padding: 10px 35px;
+    border-radius: 12px;
+}
+
+.ref-card1 p {
+    color: #FFFFFF;
+    font-size: .9rem;
+}
+
+.ref-card1 h3 {
+    color: #FFFFFF;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.bottom-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px;
+}
+
+.btn-ref1 button {
+    background-color: transparent;
+    border: none;
+    padding: 15px 0px;
+    padding-bottom: 0px;
+}
+
+.btn-ref1 a {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    background-color: #414141;
+    box-shadow: 0px 0px 8px #7996FC;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.btn-ref1 span {
+    margin-left: 40px;
+}
+
+.icon-ref1 {
+    padding: 8px 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+}
+
+.icon-ref1 i {
+    background-color: #7996FC;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.ref-card2 {
+    background-color: #414141;
+    padding: 10px 35px;
+    border-radius: 12px;
+}
+
+.ref-card2 p {
+    color: #FFFFFF;
+    font-size: .9rem;
+}
+
+.ref-card2 h3 {
+    color: #FFFFFF;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.bottom-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px;
+}
+
+.btn-ref2 button {
+    background-color: transparent;
+    border: none;
+    padding: 15px 0px;
+    padding-bottom: 0px;
+}
+
+.btn-ref2 a {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    background-color: #414141;
+    box-shadow: 0px 0px 8px #7996FC;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.btn-ref2 span {
+    margin-left: 40px;
+}
+
+.icon-ref2 {
+    padding: 8px 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+}
+
+.icon-ref2 i {
+    background-color: #7996FC;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ref-card3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+    color: #C9C9C9;
+    font-size: 1.3rem;
+    background-color: #414141;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    padding-bottom: 0px;
+    background-color: #414141;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.right {
+    display: flex;
+    gap: 150px;
+}
+
+.address,
+.phone-num,
+.email {
+    color: #FFF;
+    font-size: 1.2rem;
+    padding: 15px 0px;
+    padding-top: 0px;
+}
+
+.right-1 h2 {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 15px 0px;
+    padding-top: 0px;
+}
+
+.right-1 li {
+    padding: 12px 0px;
+}
+
+.right-1 a {
+    font-size: 1.1rem;
+    color: #C9C9C9;
+}
+
+.right-1 a:hover,
+.right-1 a:focus {
+    color: #FFF;
+}
+
+.right-2 h2 {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 15px 0px;
+    padding-top: 0px;
+}
+
+.right-2 li {
+    padding: 12px 0px;
+}
+
+.right-2 a {
+    font-size: 1.1rem;
+    color: #C9C9C9;
+}
+
+.right-2 a:hover,
+.right-2 a:focus {
+    color: #FFF;
+}
+
+
+
+@media screen and (max-width: 1027px) {
+    #navgation {
+        display: none;
+    }
+    #header header{
+        flex-direction: column;
+        flex-wrap: wrap;
+        place-items: center;
+        gap: 40px;
+    }
+
+    .info-button {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .btn-3 span {
+        display: none;
+    }
+    .btn-1 span {
+        margin-left: 127px;
+    }
+    .btn-2 span {
+        margin-left: 123px;
+    }
+
+    #typegraph {
+        padding: 10px 20%;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+
+    #typegraph h3 {
+        font-size: 1rem;
+    }
+
+    .my-skills {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0px;
+        padding: 30px 0px;
+    }
+
+    .button-account{
+        display: flex;
+        place-items: center;
+        flex-direction: column;
+        margin: 0px;
+    }
+    .btn-account-1 button {
+        margin: 0;
+    }
+    .btn-account-3 span {
+        margin-left: 50px;
+    }
+    .btn-account-2 span {
+        margin-left: 55px;
+    }
+    .title-ref{
+        padding: 15px 0px;
+    }
+    .cards-ref {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 10px;
+    }
+    #footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .right {
+        padding: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
